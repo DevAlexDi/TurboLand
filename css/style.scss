@@ -34,7 +34,12 @@
     src: url('../fonts/montserrat-v10-latin-regular.eot');
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-v10-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v10-latin-regular.woff') format('woff'), url('../fonts/montserrat-v10-latin-regular.ttf') format('truetype'), url('../fonts/montserrat-v10-latin-regular.svg#Montserrat') format('svg');
 }
-
+a{
+    color: #000;
+    &:hover{
+        color: #000;
+    }
+}
 $color: #55bb16;
 $sColor:#bc7c0b;
 body {
@@ -1023,6 +1028,7 @@ button{
     }
     .for-padd-sl{
         padding-left: 80px;
+        margin-bottom: 70px;
         .slider-wr-two{
             .slide{
                 outline: none;
@@ -1056,6 +1062,270 @@ button{
                             }
                         }
                         
+                    }
+                }
+            }
+            .slick-arrow{
+                display: block;
+                position: absolute;
+                height: 50px;
+                width: 46px;
+                border: none;
+                background-color: transparent;
+                font-size: 0;
+                left: -50px;
+                top: 50%;
+                transition: 0.3s;
+                &:hover{
+                    opacity: 0.8;
+                }
+                &.slick-prev{
+                    margin-top: -60px;
+                    background-image: url(../img/arr-prev-1.png);
+                }
+                &.slick-next{
+                    margin-top: 10px;
+                    background-image: url(../img/arr-next-1.png);
+                }
+            }
+        }
+    }
+}
+
+.for-map-wr{
+    max-width: 1600px;
+    margin: 0 auto;
+   -webkit-box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.45);
+box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.45);
+    .for-map{
+        position: relative;
+        #map{
+            height: 655px;
+        }
+        .abs-cont-desc{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 665px;
+            height: 100%;
+            padding: 15px;
+            padding-left: 0;
+            display: flex;
+            
+            .white-bg{
+                background: #fff;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                padding: 35px 30px 35px 60px;
+                .head-text{
+                    font-size: 24px;
+                    color: #282727;
+                    font-family: RalewayBold;
+                    padding-left: 13px;
+                    text-transform: uppercase;
+                    border-left: 6px solid $sColor;
+                    position: relative;
+                    margin-bottom: 25px;
+                    &:before{
+                        content: "";
+                        display: block;
+                        height: 1000px;
+                        position: absolute;
+                        bottom: 100%;
+                        left: -5px;
+                        width: 1px;
+                        background: #bc7c0b;
+                    }
+                }
+                .flex-cont{
+                    display: flex;
+                    margin-bottom: 20px;
+                    .side{
+                        width: 50%;
+                        
+                    }
+                }
+                .margin-pos{
+                    margin-bottom: 20px;
+                }
+                .telephone{
+                    color: #000;
+                    font-size: 24px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    padding-top: 24px;
+                    background-repeat: no-repeat;
+                    background-image: url(../img/tel-map.png);
+                    transition: 0.3s;
+                    display: block;
+                    &:hover{
+                        color: $sColor;
+                    }
+                }
+                .desc-one-block{
+                    font-size: 16px;
+                    color: #adabab;
+                    font-family: RalewayBold;
+                }
+                .margin-2{
+                    margin-bottom: 10px;
+                }
+                .pick-adr{
+                    margin: 0;
+                    padding-top: 30px;
+                    font-family: RalewayBold;
+                    background-image: url(../img/mark.png);
+                    background-repeat: no-repeat;
+                    transition: 0.3s;
+                    &:hover{
+                        color: $sColor;
+                    }
+                }
+                
+                .mail{
+                    display: block;
+                    padding-top: 35px;
+                    font-family: RalewayBold;
+                    font-size: 16px;
+                    background-repeat: no-repeat;
+                    background-image: url(../img/mail.png);
+                    transition: 0.3s;
+                    &:hover{
+                        color: $sColor;
+                    }
+                    &.work-time{
+                        background-image: url(../img/time.png);
+                        background-position: top 3px left;
+                    }
+                }
+                .b-flex{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 25px;
+                }
+                
+                
+                
+            }
+        }
+    }
+}
+
+footer{
+    padding: 245px 0 45px 0;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -200px;
+    p{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: RalewayRegular;
+        &:hover{
+            color: $color;
+        }
+    }
+    a{
+        display: block;
+        font-family: RalewayRegular;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        transition: 0.3s;
+        &:hover{
+            color: $color;
+        }
+    }
+}
+.sec-fixed-menu{
+    position: fixed;
+    z-index: 500;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background: #211d1d;
+    transition: 0.5s;
+    &.showed{
+       top: 0; 
+    }
+    .menu-wrapp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .side {
+            width: 400px;
+            &.left-side {
+                flex-shrink: 0;
+                 padding-bottom: 10px;
+                .for-right-border {
+                    position: relative;
+                   
+                    &:before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 50px;
+                        width: 1px;
+                        background: #959595;
+                        height: 45px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            &.right-side {
+                flex-shrink: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                 padding-bottom: 10px;
+                .work-time {
+                    margin: 0;
+                    font-size: 14px;
+                    padding-right: 25px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+                .phone {
+                    color: #fff;
+                    display: block;
+                    position: relative;
+                    top: 2px;
+                    padding-left: 18px;
+                    background-image: url(../img/tel.png);
+                    background-repeat: no-repeat;
+                    background-position: top 8px left;
+                    font-size: 21px;
+                    font-family: 'Montserrat';
+                    transition: 0.3s;
+                    &:hover {
+                        color: $color;
+                    }
+                }
+            }
+            &.mid-side {
+                width: auto;
+                ul {
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    li {
+                        padding: 5px 20px;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-size: 18px;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color;
+                        }
                     }
                 }
             }

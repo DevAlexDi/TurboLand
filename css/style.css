@@ -26,6 +26,11 @@
   font-weight: 400;
   src: url("../fonts/montserrat-v10-latin-regular.eot");
   src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v10-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v10-latin-regular.woff") format("woff"), url("../fonts/montserrat-v10-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v10-latin-regular.svg#Montserrat") format("svg"); }
+a {
+  color: #000; }
+  a:hover {
+    color: #000; }
+
 body {
   font-family: PfsquaresansproReg; }
 
@@ -802,7 +807,8 @@ button {
       color: #bc7c0b;
       font-size: 55px; }
   .sec-lvl-7 .for-padd-sl {
-    padding-left: 80px; }
+    padding-left: 80px;
+    margin-bottom: 70px; }
     .sec-lvl-7 .for-padd-sl .slider-wr-two .slide {
       outline: none; }
       .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .head-slide {
@@ -828,5 +834,219 @@ button {
             margin-bottom: 15px; }
             .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .for-flex-text .text p:last-child {
               margin-bottom: 0; }
+    .sec-lvl-7 .for-padd-sl .slider-wr-two .slick-arrow {
+      display: block;
+      position: absolute;
+      height: 50px;
+      width: 46px;
+      border: none;
+      background-color: transparent;
+      font-size: 0;
+      left: -50px;
+      top: 50%;
+      transition: 0.3s; }
+      .sec-lvl-7 .for-padd-sl .slider-wr-two .slick-arrow:hover {
+        opacity: 0.8; }
+      .sec-lvl-7 .for-padd-sl .slider-wr-two .slick-arrow.slick-prev {
+        margin-top: -60px;
+        background-image: url(../img/arr-prev-1.png); }
+      .sec-lvl-7 .for-padd-sl .slider-wr-two .slick-arrow.slick-next {
+        margin-top: 10px;
+        background-image: url(../img/arr-next-1.png); }
+
+.for-map-wr {
+  max-width: 1600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.45); }
+  .for-map-wr .for-map {
+    position: relative; }
+    .for-map-wr .for-map #map {
+      height: 655px; }
+    .for-map-wr .for-map .abs-cont-desc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 665px;
+      height: 100%;
+      padding: 15px;
+      padding-left: 0;
+      display: flex; }
+      .for-map-wr .for-map .abs-cont-desc .white-bg {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 35px 30px 35px 60px; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .head-text {
+          font-size: 24px;
+          color: #282727;
+          font-family: RalewayBold;
+          padding-left: 13px;
+          text-transform: uppercase;
+          border-left: 6px solid #bc7c0b;
+          position: relative;
+          margin-bottom: 25px; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .head-text:before {
+            content: "";
+            display: block;
+            height: 1000px;
+            position: absolute;
+            bottom: 100%;
+            left: -5px;
+            width: 1px;
+            background: #bc7c0b; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .flex-cont {
+          display: flex;
+          margin-bottom: 20px; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .flex-cont .side {
+            width: 50%; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .margin-pos {
+          margin-bottom: 20px; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .telephone {
+          color: #000;
+          font-size: 24px;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          padding-top: 24px;
+          background-repeat: no-repeat;
+          background-image: url(../img/tel-map.png);
+          transition: 0.3s;
+          display: block; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .telephone:hover {
+            color: #bc7c0b; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .desc-one-block {
+          font-size: 16px;
+          color: #adabab;
+          font-family: RalewayBold; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .margin-2 {
+          margin-bottom: 10px; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .pick-adr {
+          margin: 0;
+          padding-top: 30px;
+          font-family: RalewayBold;
+          background-image: url(../img/mark.png);
+          background-repeat: no-repeat;
+          transition: 0.3s; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .pick-adr:hover {
+            color: #bc7c0b; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .mail {
+          display: block;
+          padding-top: 35px;
+          font-family: RalewayBold;
+          font-size: 16px;
+          background-repeat: no-repeat;
+          background-image: url(../img/mail.png);
+          transition: 0.3s; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .mail:hover {
+            color: #bc7c0b; }
+          .for-map-wr .for-map .abs-cont-desc .white-bg .mail.work-time {
+            background-image: url(../img/time.png);
+            background-position: top 3px left; }
+        .for-map-wr .for-map .abs-cont-desc .white-bg .b-flex {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px; }
+
+footer {
+  padding: 245px 0 45px 0;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -200px; }
+  footer p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: RalewayRegular; }
+    footer p:hover {
+      color: #55bb16; }
+  footer a {
+    display: block;
+    font-family: RalewayRegular;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s; }
+    footer a:hover {
+      color: #55bb16; }
+
+.sec-fixed-menu {
+  position: fixed;
+  z-index: 500;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  background: #211d1d;
+  transition: 0.5s; }
+  .sec-fixed-menu.showed {
+    top: 0; }
+  .sec-fixed-menu .menu-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .sec-fixed-menu .menu-wrapp .side {
+      width: 400px; }
+      .sec-fixed-menu .menu-wrapp .side.left-side {
+        flex-shrink: 0;
+        padding-bottom: 10px; }
+        .sec-fixed-menu .menu-wrapp .side.left-side .for-right-border {
+          position: relative; }
+          .sec-fixed-menu .menu-wrapp .side.left-side .for-right-border:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            width: 1px;
+            background: #959595;
+            height: 45px;
+            transform: translateY(-50%); }
+      .sec-fixed-menu .menu-wrapp .side.right-side {
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-bottom: 10px; }
+        .sec-fixed-menu .menu-wrapp .side.right-side .work-time {
+          margin: 0;
+          font-size: 14px;
+          padding-right: 25px;
+          text-transform: uppercase;
+          color: #fff; }
+        .sec-fixed-menu .menu-wrapp .side.right-side .phone {
+          color: #fff;
+          display: block;
+          position: relative;
+          top: 2px;
+          padding-left: 18px;
+          background-image: url(../img/tel.png);
+          background-repeat: no-repeat;
+          background-position: top 8px left;
+          font-size: 21px;
+          font-family: 'Montserrat';
+          transition: 0.3s; }
+          .sec-fixed-menu .menu-wrapp .side.right-side .phone:hover {
+            color: #55bb16; }
+      .sec-fixed-menu .menu-wrapp .side.mid-side {
+        width: auto; }
+        .sec-fixed-menu .menu-wrapp .side.mid-side ul {
+          margin: 0;
+          list-style: none;
+          display: flex; }
+          .sec-fixed-menu .menu-wrapp .side.mid-side ul li {
+            padding: 5px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s; }
+            .sec-fixed-menu .menu-wrapp .side.mid-side ul li:hover {
+              color: #55bb16; }
 
 /*# sourceMappingURL=style.css.map */
