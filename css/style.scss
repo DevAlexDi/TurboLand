@@ -627,7 +627,7 @@ body {
 .sec-lvl-3{
     background: #ebebeb;
     .for-slide-down{
-        
+        display: none;
     }
     .first-row{
         display: flex;
@@ -1332,10 +1332,273 @@ footer{
         }
     }
 }
+.modal{
+    background: rgba(237,237,237,0.75);
+    .modal-dialog {
+        width: 100%;
+   position: absolute;
+        top: 50%;
+        left: 50%;
+       transform: translate(-50%,-50%)!important;
+        
+        transition: 0.5s;
+        opacity: 0;
+    }
+    &.in {
+        .modal-dialog {
+            opacity: 1;
+             transform: translate(-50%,-50%)!important;
+        }
+    }
+}
 
+.form-modal{
+    &#get-a-consult{
+        .modal-dialog{
+           max-width: 715px; 
+        }  
+    }
+     .modal-dialog{
+        max-width: 861px;
+         margin: 0;
+         .bg-gradient{
+             background: linear-gradient(45deg, #79cc02, #2fa92a);
+             padding: 22px;
+             .fff-bg{
+                 background: #fff;
+                 padding: 20px 40px;
+                 .head{
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: flex-start;
+                     margin-bottom: 37px;
+                     .h-text{
+                         .f{
+                             padding-left: 13px;
+                             font-family: RalewayRegular;
+                             font-size: 24px;
+                             text-transform: uppercase;
+                             border-left: 4px solid $sColor;
+                             margin-bottom: 5px;
+                             font-weight: bold;
+                         }
+                         .s{
+                            font-size: 14px;   
+                         }
+                     }
+                     .closee{
+                         transition: 0.3s;
+                         &:hover{
+                             color: $color;
+                             cursor: pointer;
+                         }
+                     }
+                 }
+                 .m-mody{
+                     display: flex;
+                     justify-content: space-between;
+                     .left-side{
+                        max-width: 240px;
+                         width: 100%;
+                         .name-input{
+                             color: #6f6f6f;
+                             margin-bottom: 15px;
+                             
+                         }
+                         input{
+                            display: block;
+                            width: 100%;
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid $sColor;
+                            padding: 3px 0;
+                            background-color: transparent;
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+                            margin-bottom: 30px;
+                            font-family: RalewayRegular;
+                            font-size: 14px;
+                            background-repeat: no-repeat;
+                             &.tel-inp{
+                                  font-family: 'Montserrat';
+                             }
+                         }
+                          .agreement {
+                            display: flex;
+                            cursor: pointer;
+                            margin-bottom: 15px;
+                            .agree-check {
+                                flex-shrink: 0;
+                                width: 18px;
+                                height: 18px;
+                                margin-right: 12px;
+                                border: 3px solid #d7d7d7;
+                                display: block;
+                                position: relative;
+                                transition: 0.3s;
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    display: block;
+                                    width: 8px;
+                                    height: 8px;
+                                    background-color: transparent;
+                                    top: 2px;
+                                    left: 2px;
+                                    transition: 0.3s;
+                                }
+                                &.agree {
+                                    border-color: #51b918;
+                                    &:before {
+                                        background-color: #51b918;
+                                    }
+                                }
+                            }
+                            p {
+                                font-family: RalewayRegular;
+                                font-size: 10px;
+                            }
+                        }
+                     
+                     }
+                     .right-side{
+                          max-width: 350px;
+                         width: 100%;
+                         &.without-mark{
+                             max-width: 240px;
+                         }
+                          .name-input{
+                             color: #6f6f6f;
+                             margin-bottom: 15px;
+                             
+                         }
+                         .tel-inp{
+                             display: block;
+                            width: 100%;
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid $sColor;
+                            padding: 3px 0;
+                            background-color: transparent;
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+                            margin-bottom: 30px;
+                             font-family: 'Montserrat';
+                            font-size: 14px;
+                            background-repeat: no-repeat;
+                         }
+                         .flex-rows{
+                             display: flex;
+                             align-items: center;
+                             margin-bottom: 30px;
+                             input{
+                                 display: block;
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid $sColor;
+                                padding: 3px 0;
+                                background-color: transparent;
+                                -webkit-transition: 0.3s;
+                                transition: 0.3s;
+                                margin-bottom: 30px;
+                                font-family: RalewayRegular;
+                                font-size: 14px;
+                                background-repeat: no-repeat;
+                                max-width: 145px;
+                                 &:last-child{
+                                     margin-left: auto;
+                                 }
+                             }
+                             p{
+                                 font-family: RalewayBlack;
+                                 font-size: 18px;
+                                 margin-bottom: 0;
+                                 
+                             }
+                             .img-bg{
+                                 width: 100px;
+                                 height: 80px;
+                                 margin-left: auto;
+                                 background-repeat: no-repeat;
+                                 background-position: center;
+                                 background-size: contain;
+                             }
+                         }
+                         .b-flex{
+                             display: flex;
+                             justify-content: center;
+                             button{
+                                     padding: 9px 80px;
+                             }
+                         }
+                     }
+                 }
+                 
+                 
+             }
+         }
+    }
+}
 
+#agreement-modal {
+    .modal-dialog {
+        width: 930px;
+        
+    }
+    
+    .buy_form_wrap {
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        transition: 0.3s;
+        position: relative;
+        padding: 40px 10px 10px 10px;
+    }
+    .closee {
+        font-size: 25px;
+        position: absolute;
+        right: 12px;
+        top: -3px;
+        transition: 0.3s;
+        cursor: pointer;
+        display: block;
+        &:hover {
+            color: $color;
+        }
+    }
+    .for-scroll {
+        height: 500px;
+        padding: 25px;
+        overflow: auto;
+        h6 {
+            text-align: center;
+            font-family: RalewayBlack;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            font-size: 26px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            strong{
+                display: block;
+            }
+        }
+    }
+}
 
+#agreement-modal .for-scroll::-webkit-scrollbar {
+    background: #fff;
+    width: 8px;
+}
 
+#agreement-modal .for-scroll::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 
 

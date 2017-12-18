@@ -543,6 +543,8 @@ body {
 
 .sec-lvl-3 {
   background: #ebebeb; }
+  .sec-lvl-3 .for-slide-down {
+    display: none; }
   .sec-lvl-3 .first-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1178,5 +1180,239 @@ footer {
             transition: 0.3s; }
             .sec-fixed-menu .menu-wrapp .side.mid-side ul li:hover {
               color: #55bb16; }
+
+.modal {
+  background: rgba(237, 237, 237, 0.75); }
+  .modal .modal-dialog {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0; }
+  .modal.in .modal-dialog {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important; }
+
+.form-modal#get-a-consult .modal-dialog {
+  max-width: 715px; }
+.form-modal .modal-dialog {
+  max-width: 861px;
+  margin: 0; }
+  .form-modal .modal-dialog .bg-gradient {
+    background: linear-gradient(45deg, #79cc02, #2fa92a);
+    padding: 22px; }
+    .form-modal .modal-dialog .bg-gradient .fff-bg {
+      background: #fff;
+      padding: 20px 40px; }
+      .form-modal .modal-dialog .bg-gradient .fff-bg .head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin-bottom: 37px; }
+        .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .f {
+          padding-left: 13px;
+          font-family: RalewayRegular;
+          font-size: 24px;
+          text-transform: uppercase;
+          border-left: 4px solid #bc7c0b;
+          margin-bottom: 5px;
+          font-weight: bold; }
+        .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .s {
+          font-size: 14px; }
+        .form-modal .modal-dialog .bg-gradient .fff-bg .head .closee {
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .head .closee:hover {
+            color: #55bb16;
+            cursor: pointer; }
+      .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side {
+          max-width: 240px;
+          width: 100%; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .name-input {
+            color: #6f6f6f;
+            margin-bottom: 15px; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side input {
+            display: block;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #bc7c0b;
+            padding: 3px 0;
+            background-color: transparent;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            margin-bottom: 30px;
+            font-family: RalewayRegular;
+            font-size: 14px;
+            background-repeat: no-repeat; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side input.tel-inp {
+              font-family: 'Montserrat'; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 15px; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement .agree-check {
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+              width: 18px;
+              height: 18px;
+              margin-right: 12px;
+              border: 3px solid #d7d7d7;
+              display: block;
+              position: relative;
+              -webkit-transition: 0.3s;
+              transition: 0.3s; }
+              .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement .agree-check:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: transparent;
+                top: 2px;
+                left: 2px;
+                -webkit-transition: 0.3s;
+                transition: 0.3s; }
+              .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement .agree-check.agree {
+                border-color: #51b918; }
+                .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement .agree-check.agree:before {
+                  background-color: #51b918; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement p {
+              font-family: RalewayRegular;
+              font-size: 10px; }
+        .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side {
+          max-width: 350px;
+          width: 100%; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side.without-mark {
+            max-width: 240px; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .name-input {
+            color: #6f6f6f;
+            margin-bottom: 15px; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .tel-inp {
+            display: block;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #bc7c0b;
+            padding: 3px 0;
+            background-color: transparent;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            margin-bottom: 30px;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            background-repeat: no-repeat; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 30px; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows input {
+              display: block;
+              width: 100%;
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #bc7c0b;
+              padding: 3px 0;
+              background-color: transparent;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+              margin-bottom: 30px;
+              font-family: RalewayRegular;
+              font-size: 14px;
+              background-repeat: no-repeat;
+              max-width: 145px; }
+              .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows input:last-child {
+                margin-left: auto; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows p {
+              font-family: RalewayBlack;
+              font-size: 18px;
+              margin-bottom: 0; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows .img-bg {
+              width: 100px;
+              height: 80px;
+              margin-left: auto;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain; }
+          .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .b-flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .b-flex button {
+              padding: 9px 80px; }
+
+#agreement-modal .modal-dialog {
+  width: 930px; }
+#agreement-modal .buy_form_wrap {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  padding: 40px 10px 10px 10px; }
+#agreement-modal .closee {
+  font-size: 25px;
+  position: absolute;
+  right: 12px;
+  top: -3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  display: block; }
+  #agreement-modal .closee:hover {
+    color: #55bb16; }
+#agreement-modal .for-scroll {
+  height: 500px;
+  padding: 25px;
+  overflow: auto; }
+  #agreement-modal .for-scroll h6 {
+    text-align: center;
+    font-family: RalewayBlack;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    font-size: 26px; }
+  #agreement-modal .for-scroll p {
+    font-size: 14px;
+    margin-bottom: 15px; }
+    #agreement-modal .for-scroll p strong {
+      display: block; }
+
+#agreement-modal .for-scroll::-webkit-scrollbar {
+  background: #fff;
+  width: 8px; }
+
+#agreement-modal .for-scroll::-webkit-scrollbar-thumb {
+  background: #55bb16;
+  border-radius: 4px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

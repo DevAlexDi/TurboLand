@@ -163,7 +163,71 @@ $(document).ready(function () {
         
     });
     
+    $('.tel-inp').inputmask({
+        "mask": "+7 (999) 999-99-99"
+        , "placeholder": "_"
+        , showMaskOnHover: false
+        , showMaskOnFocus: true
+    });
+    
     
     $('.slider-nav .slick-current .circle').addClass('changed');
 
+    
+    
+    
+    
+    
+    
+     $('.slider-nav .slide').click(function(){
+         
+         $("#get-a-consult-mark").modal('show');
+         
+     });
+    
+    $(".sec-lvl-3 .flex-cat-lvl-1 .one-brand").click(function(){
+         
+         $("#get-a-consult-mark").modal('show');
+         
+     });
+    
+    
+    var flag_for_slide_up = true;
+    
+    $(".cat-taxt").click(function(){
+         if(flag_for_slide_up){
+             $(".for-slide-down").slideDown(300);
+             flag_for_slide_up = false;
+             $(".for-change").html('свернуть');
+         }
+        else{
+            $(".for-slide-down").slideUp(300);
+            flag_for_slide_up = true;
+            $(".for-change").html('Смотреть<br> все модели');
+        }
+        
+         
+     });
+    
+    $(".abs-all-marks").click(function(){
+        $('body,html').animate({
+            scrollTop: $(".sec-lvl-3").offset().top - 50
+        }, 700);
+    })
+    
+    $('.my-menu li').click(function () {
+        if($(this).attr('data-href')){
+            var el = $(this).attr('data-href');
+            $('body,html').animate({
+                scrollTop: $(el).offset().top - 50
+            }, 700);
+            return false;
+        }
+    });
+    
+    
+    
+    
+    
+    
 });

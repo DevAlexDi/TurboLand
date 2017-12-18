@@ -28,11 +28,11 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="collapse navbar-collapse my-menu" id="fixed-menu">
-                        <ul >
-                            <li>АКЦИИ</li>
-                            <li>УСЛУГИ</li>
-                            <li>О компании</li>
-                            <li>КОНТАКТЫ</li>
+                        <ul class="my-menu">
+                            <li data-href="#scroll-1">АКЦИИ</li>
+                            <li data-href="#scroll-2">УСЛУГИ</li>
+                            <li data-href="#scroll-3">О компании</li>
+                            <li data-href="#scroll-4">КОНТАКТЫ</li>
                         </ul>
                     </div>
                 </div>
@@ -58,11 +58,11 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="collapse navbar-collapse my-menu" id="static-menu">
-                            <ul >
-                                <li>АКЦИИ</li>
-                                <li>УСЛУГИ</li>
-                                <li>О компании</li>
-                                <li>КОНТАКТЫ</li>
+                            <ul class="my-menu">
+                                <li data-href="#scroll-1">АКЦИИ</li>
+                                <li data-href="#scroll-2">УСЛУГИ</li>
+                                <li data-href="#scroll-3">О компании</li>
+                                <li data-href="#scroll-4">КОНТАКТЫ</li>
                             </ul>
                         </div>
                        
@@ -186,7 +186,7 @@
             </div>
         </div>
     </section>
-    <section class="sec-lvl-2">
+    <section class="sec-lvl-2" id="scroll-1">
         <div class="max-container">
             <div class="for-flex-sides">
                 <div class="left-side">
@@ -328,7 +328,7 @@
             </div>
         </div>
     </section>
-    <section class="sec-lvl-5">
+    <section class="sec-lvl-5" id="scroll-2">
         <div class="sec-tabs">
             <div class="max-container">
                 <h6 class="head-sec-5">Наш сервис предоставляет комплекс услуг по ремонту автомобилей всех мировых производителей</h6>
@@ -460,7 +460,7 @@
             </div>
         </div>
     </section>
-    <section class="sec-lvl-7">
+    <section class="sec-lvl-7" id="scroll-3">
         <div class="max-container">
             <h3 class="head-sec-7"><span>ПОЛЕЗНАЯ</span> ИНФОРМАЦИЯ</h3>
             <div class="for-padd-sl">
@@ -501,7 +501,7 @@
                     </div>
                 </div>
             </div>
-            <div class="for-map-wr">
+            <div class="for-map-wr" id="scroll-4">
                 <div class="for-map">
                     <div id="map"></div>
                     <div class="abs-cont-desc">
@@ -555,7 +555,7 @@
         <a href="#">дизайн и разработка сайта</a>
     </footer>
     
-    <div class="modal form-modal" id="get-a-consult-mark">
+    <div class="modal fade form-modal" id="get-a-consult-mark">
         <div class="modal-dialog">
             <div class="modal-contant">
                 <div class="modal-body">
@@ -564,36 +564,129 @@
                             <div class="head">
                                 <div class="h-text">
                                     <p class="f">Заказать звонок</p>
-                                    <p class="s">получите ответ в течении 15 минут!</p>
+                                    <p class="s">получите ответ в течении <strong>15</strong> минут!</p>
                                 </div>
                                  <span class="closee" data-dismiss="modal">закрыть x</span>
                             </div>
                             <div class="m-mody">
                                 <div class="left-side">
-                                        
+                                    <div class="for-styles-brand-m">
+                                        <p class="name-input">Имя</p>
+                                        <input type="text" class="name-inp" placeholder="Напишите свое имя">
+                                        <p class="name-input">Телефон</p>
+                                        <input type="text" class="tel-inp" placeholder="+7 (___) ___-__-__">
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="flex-rows">
+                                        <p>Марка автомобиля</p>
+                                        <div class="img-bg" style="background-image: url(img/bmw.png)"></div>
+                                    </div>
+                                    <div class="flex-rows">
+                                       <input type="text" placeholder="год выпуска">
+                                        <input type="text" placeholder="Объем">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-mody">
+                                <div class="left-side">
+                                    <div class="agreement">
+                                        <span class="agree-check"></span>
+                                        <p>Вы соглашаетесь с условиями обработки персональных данных (ознакомиться)</p>
+                                    </div>
                                         
                                 </div>
                                 <div class="right-side">
-                                
-                                
+                                    
+                                    <div class="b-flex">
+                                        <button class="button-style shadow">Отправить</button>
+                                    </div>
                                 
                                 </div>
                             </div>
                         </form>
-                        
                     </div>
-                    
-                    
-                    
                 </div>
             </div>
         </div>
     </div>
     
     
+    <div class="modal fade form-modal" id="get-a-consult">
+        <div class="modal-dialog">
+            <div class="modal-contant">
+                <div class="modal-body">
+                    <div class="bg-gradient">
+                        <form class="fff-bg">
+                            <div class="head">
+                                <div class="h-text">
+                                    <p class="f">Заказать звонок</p>
+                                    <p class="s">получите ответ в течении <strong>15</strong> минут!</p>
+                                </div>
+                                 <span class="closee" data-dismiss="modal">закрыть x</span>
+                            </div>
+                            <div class="m-mody">
+                                <div class="left-side">
+                                    <div class="for-styles-brand-m">
+                                      
+                                        <p class="name-input">Имя</p>
+                                        <input type="text" class="name-inp" placeholder="Напишите свое имя">
+                                            
+                                    </div>
+                                        
+                                </div>
+                                <div class="right-side without-mark">
+                                    <div class="for-styles-brand-m">
+                                        <p class="name-input">Телефон</p>
+                                        <input type="text" class="tel-inp" placeholder="+7 (___) ___-__-__">
+                                       
+                                    </div>
+                                
+                                
+                                </div>
+                            </div>
+                            <div class="m-mody">
+                                <div class="left-side">
+                                     <div class="agreement">
+                                        <span class="agree-check"></span>
+                                        <p>Вы соглашаетесь с условиями обработки персональных данных (ознакомиться)</p>
+                                    </div>
+                                </div>
+                                <div class="right-side without-mark">
+                                    <div class="b-flex">
+                                        <button class="button-style shadow">Отправить</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    
-    
+    <div class="modal fade" id="agreement-modal">
+        <div class="modal-dialog">
+            <div class="modal-contant">
+                <div class="modal-body">
+                    <div class="buy_form_wrap">
+                        <span class="closee" data-dismiss="modal">x</span>
+                        <div class="for-scroll">
+                            <h6>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h6>
+                            <p><strong>Введение</strong> Мы стремимся уважать информацию личного характера, касающуюся посетителей нашего сайта. В настоящей Политике конфиденциальности разъясняются некоторые из мер, которые мы предпринимаем для защиты Вашей частной жизни.</p>
+                            <p><strong>Конфиденциальность информации личного характера</strong> "Информация личного характера" обозначает любую информацию, которая может быть использована для идентификации личности, например, фамилия или адрес электронной почты.</p>
+                            <p><strong>Использование информации частного характера.</strong> Информация личного характера, полученная через наш сайт, используется нами, среди прочего, для целей регистрирования пользователей, для поддержки работы и совершенствования нашего сайта, отслеживания политики и статистики пользования сайтом, а также в целях, разрешенных вами. </p>
+                            <p><strong>Раскрытие информации частного характера.</strong> Мы нанимаем другие компании или связаны с компаниями, которые по нашему поручению предоставляют услуги, такие как обработка и доставка информации, размещение информации на данном сайте, доставка содержания и услуг, предоставляемых настоящим сайтом, выполнение статистического анализа. Чтобы эти компании могли предоставлять эти услуги, мы можем сообщать им информацию личного характера, однако им будет разрешено получать только ту информацию личного характера, которая необходима им для предоставления услуг. Они обязаны соблюдать конфиденциальность этой информации, и им запрещено использовать ее в иных целях.</p>
+                            <p>Мы можем использовать или раскрывать Ваши личные данные и по иным причинам, в том числе, если мы считаем, что это необходимо в целях выполнения требований закона или решений суда, для защиты наших прав или собственности, защиты личной безопасности пользователей нашего сайта или представителей широкой общественности, в целях расследования или принятия мер в отношении незаконной или предполагаемой незаконной деятельности, в связи с корпоративными сделками, такими как разукрупнение, слияние, консолидация, продажа активов или в маловероятном случае банкротства, или в иных целях в соответствии с Вашим согласием.</p>
+                            <p>Мы не будем продавать, предоставлять на правах аренды или лизинга наши списки пользователей с адресами электронной почты третьим сторонам.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     

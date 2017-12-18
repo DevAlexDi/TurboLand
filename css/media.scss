@@ -463,6 +463,105 @@
     .for-map-wr .for-map .abs-cont-desc .white-bg {
         padding: 30px;
     }
+     .modal .modal-dialog {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none!important;
+        margin: 20px auto;
+        width: 290px!important;
+    }
+    .modal.in .modal-dialog {
+        transform: none!important;
+    }
+    #agreement-modal .for-scroll {
+        padding: 15px;
+    }
+    #agreement-modal .for-scroll h6 {
+        margin-bottom: 21px;
+        font-size: 13px;
+    }
+    #agreement-modal .for-scroll p {
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+    .form-modal .modal-dialog .bg-gradient{
+        padding: 10px;
+    }
+    .form-modal .modal-dialog .bg-gradient .fff-bg{
+        padding: 10px;
+    }
+    
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody{
+        display: block;
+    }
+    
+    .form-modal .modal-dialog .bg-gradient .fff-bg .head .closee{
+        white-space: nowrap;
+    }
+    .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .f{
+        font-size: 16px;
+    }
+    
+    .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .s {
+    font-size: 10px;
+        
+    }
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows{
+        flex-direction: column;
+        
+    }
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows .img-bg{
+        margin: auto;
+    }
+    
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows input:last-child{
+        margin: auto;
+    }
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .b-flex button {
+    padding: 4px 50px;
+    margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media (max-width: 767px) {
