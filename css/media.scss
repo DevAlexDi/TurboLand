@@ -335,6 +335,37 @@
             padding: 12px 30px;
         }
     }
+    
+    .sec-fixed-menu .menu-wrapp .side.mid-side ul li{
+        font-size: 15px;
+    }
+    
+    .sec-fixed-menu .menu-wrapp .side.left-side .for-right-border{
+        img{
+        max-width: 150px;
+        }
+    }
+    
+    .sec-fixed-menu .menu-wrapp .side {
+    width: 218px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media (max-width: 991px) {
@@ -463,7 +494,7 @@
     .for-map-wr .for-map .abs-cont-desc .white-bg {
         padding: 30px;
     }
-     .modal .modal-dialog {
+    .modal .modal-dialog {
         position: relative;
         top: 0;
         left: 0;
@@ -485,69 +516,42 @@
         text-align: justify;
         font-size: 12px;
     }
-    
-    .form-modal .modal-dialog .bg-gradient{
+    .form-modal .modal-dialog .bg-gradient {
         padding: 10px;
     }
-    .form-modal .modal-dialog .bg-gradient .fff-bg{
+    .form-modal .modal-dialog .bg-gradient .fff-bg {
         padding: 10px;
     }
-    
-    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody {
         display: block;
     }
-    
-    .form-modal .modal-dialog .bg-gradient .fff-bg .head .closee{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .head .closee {
         white-space: nowrap;
     }
-    .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .f{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .f {
         font-size: 16px;
     }
-    
     .form-modal .modal-dialog .bg-gradient .fff-bg .head .h-text .s {
-    font-size: 10px;
-        
+        font-size: 10px;
     }
-    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows {
         flex-direction: column;
-        
     }
-    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows .img-bg{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows .img-bg {
         margin: auto;
     }
-    
-    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows input:last-child{
+    .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .flex-rows input:last-child {
         margin: auto;
     }
     .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side .b-flex button {
-    padding: 4px 50px;
-    margin-bottom: 20px;
+        padding: 4px 50px;
+        margin-bottom: 20px;
         font-size: 14px;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .sec-fixed-menu .menu-wrapp .side.right-side{
+        display: none;
+    }
     
     
     
@@ -798,65 +802,71 @@
         font-size: 16px;
         margin-bottom: 10px;
     }
-    .sec-lvl-7 .head-sec-7{
-            font-size: 22px;
+    .sec-lvl-7 .head-sec-7 {
+        font-size: 22px;
     }
-    .sec-lvl-7 .head-sec-7 span{
+    .sec-lvl-7 .head-sec-7 span {
         font-size: 30px;
     }
-    .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .head-slide strong{
+    .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .head-slide strong {
         font-size: 16px;
     }
-    .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .head-slide{
+    .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .head-slide {
         font-size: 16px;
     }
-    
     .sec-lvl-7 .for-padd-sl {
         padding-left: 52px;
     }
     .sec-lvl-7 .for-padd-sl .slider-wr-two .slide .for-flex-text .img-wr {
         width: 245px;
     }
-    .for-map-wr .for-map #map{
+    .for-map-wr .for-map #map {
         height: 220px;
     }
     .for-map-wr .for-map .abs-cont-desc .white-bg .head-text {
-    font-size: 20px;
+        font-size: 20px;
     }
     .for-map-wr .for-map .abs-cont-desc .white-bg {
-    padding: 15px;
+        padding: 15px;
     }
     .for-map-wr .for-map .abs-cont-desc .white-bg .telephone {
-    font-size: 13px;
-}
+        font-size: 13px;
+    }
     .for-map-wr .for-map .abs-cont-desc .white-bg .desc-one-block {
         font-size: 13px;
     }
-    .for-map-wr .for-map .abs-cont-desc .white-bg .pick-adr{
+    .for-map-wr .for-map .abs-cont-desc .white-bg .pick-adr {
         font-size: 14px;
     }
-    
-    .for-map-wr .for-map .abs-cont-desc .white-bg .mail{
+    .for-map-wr .for-map .abs-cont-desc .white-bg .mail {
         font-size: 13px;
     }
-    .for-map-wr .for-map .abs-cont-desc .white-bg .b-flex .button-style{
+    .for-map-wr .for-map .abs-cont-desc .white-bg .b-flex .button-style {
         font-size: 11px;
-        
+    }
+    .sec-lvl-1 header .menu-wrapp .side.right-side .work-time {
+        font-size: 11px;
+    }
+    .sec-lvl-1 header .menu-wrapp .side.right-side .phone{
+        font-size: 13px;
+    }
+    .sec-fixed-menu .menu-wrapp{
+        display: block;
+    }
+    .sec-fixed-menu .menu-wrapp .side.mid-side ul{
+        display: block;
+        padding-bottom: 15px;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .sec-fixed-menu .menu-wrapp .side.mid-side ul li{
+        text-align: center;
+    }
+    .sec-fixed-menu{
+        .navbar-toggle{
+            margin-top: 6px;
+        }
+        
+    }
     
     
     

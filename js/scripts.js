@@ -211,7 +211,7 @@ $(document).ready(function () {
     
     $(".abs-all-marks").click(function(){
         $('body,html').animate({
-            scrollTop: $(".sec-lvl-3").offset().top - 50
+            scrollTop: $(".sec-lvl-3").offset().top - 85
         }, 700);
     })
     
@@ -219,7 +219,7 @@ $(document).ready(function () {
         if($(this).attr('data-href')){
             var el = $(this).attr('data-href');
             $('body,html').animate({
-                scrollTop: $(el).offset().top - 50
+                scrollTop: $(el).offset().top - 85
             }, 700);
             return false;
         }
@@ -227,6 +227,45 @@ $(document).ready(function () {
     
     
     
+    $(".agreement p span").click(function(){
+        $("#agreement-modal").modal('show');
+    });
+    
+     $("footer p").click(function(){
+        $("#agreement-modal").modal('show');
+    });
+    
+    $(".agree-check").click(function(){
+        if($(this).hasClass("agree")){
+            $(this).removeClass("agree");
+           
+        }
+        else{
+            $(this).addClass("agree");
+        }
+    });
+    
+    $(".get-a-consult-open").click(function(){
+        $("#get-a-consult").modal('show');
+    });
+    
+    
+    
+    function super_menu(wrapp) {
+        
+        if ($(window).scrollTop() > 400) {
+            wrapp.addClass("showed");
+        }
+        else {
+            wrapp.removeClass("showed");
+        }
+        
+    }
+    super_menu($(".sec-fixed-menu"));
+    
+    $(window).scroll(function(){
+         super_menu($(".sec-fixed-menu"));
+    });
     
     
     

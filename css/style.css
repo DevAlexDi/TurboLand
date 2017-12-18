@@ -383,7 +383,7 @@ body {
 .sec-lvl-2 {
   background-image: url(../img/circle-img.png), url(../img/turb.jpg);
   background-repeat: no-repeat;
-  background-position: top left,bottom right; }
+  background-position: top left, bottom right; }
   .sec-lvl-2 .for-flex-sides {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -504,6 +504,12 @@ body {
       .form-wrapp .alighn-inp .agreement p {
         font-family: RalewayRegular;
         font-size: 10px; }
+        .form-wrapp .alighn-inp .agreement p span {
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+          cursor: pointer; }
+          .form-wrapp .alighn-inp .agreement p span:hover {
+            color: #55bb16; }
   .form-wrapp button {
     width: 100%;
     -webkit-box-shadow: -8px 10px 48px 0px rgba(0, 0, 0, 0.4);
@@ -616,7 +622,7 @@ body {
   padding: 60px 0;
   background-image: url(../img/car-bg.png), url(../img/circle-2.png);
   background-repeat: no-repeat;
-  background-position: top left -10px,top -309px left 68%; }
+  background-position: top left -10px, top -309px left 68%; }
   .sec-lvl-4 .for-flex-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,6 +825,12 @@ body {
             .sec-lvl-5 .sec-form .max-w-container .some-form .alighn-inp .agreement p {
               font-family: RalewayRegular;
               font-size: 10px; }
+              .sec-lvl-5 .sec-form .max-w-container .some-form .alighn-inp .agreement p span {
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                cursor: pointer; }
+                .sec-lvl-5 .sec-form .max-w-container .some-form .alighn-inp .agreement p span:hover {
+                  color: #55bb16; }
         .sec-lvl-5 .sec-form .max-w-container .some-form .b-flex {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1027,6 +1039,7 @@ button {
         .for-map-wr .for-map .abs-cont-desc .white-bg .margin-2 {
           margin-bottom: 10px; }
         .for-map-wr .for-map .abs-cont-desc .white-bg .pick-adr {
+          cursor: pointer;
           margin: 0;
           padding-top: 30px;
           font-family: RalewayBold;
@@ -1091,7 +1104,7 @@ footer {
 .sec-fixed-menu {
   position: fixed;
   z-index: 500;
-  top: -100px;
+  top: -400px;
   left: 0;
   width: 100%;
   background: #211d1d;
@@ -1300,6 +1313,12 @@ footer {
             .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement p {
               font-family: RalewayRegular;
               font-size: 10px; }
+              .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement p span {
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                cursor: pointer; }
+                .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .left-side .agreement p span:hover {
+                  color: #55bb16; }
         .form-modal .modal-dialog .bg-gradient .fff-bg .m-mody .right-side {
           max-width: 350px;
           width: 100%; }
