@@ -90,7 +90,7 @@ function init() {
 
 $(document).ready(function () {
     var myMap;
-    //ymaps.ready(init);
+    ymaps.ready(init);
     
 
 
@@ -249,6 +249,19 @@ $(document).ready(function () {
         $("#get-a-consult").modal('show');
     });
     
+    var win = $(window);
+    var scrFunc = function () {
+        var t = win.scrollTop(),
+            e = win.height();
+        $("[data-anim], .one-b, .wrapp-for-anim-my-1, .wrapp-for-anim-my-2").each(function (n, i) {
+            var r = $(i).offset().top,
+                s = t + .9 * e;
+            s > r ? $(i).attr("data-anim", "true") : $(i).attr("data-anim", "false")
+        })
+    }
+    scrFunc();
+    
+    
     
     
     function super_menu(wrapp) {
@@ -265,7 +278,16 @@ $(document).ready(function () {
     
     $(window).scroll(function(){
          super_menu($(".sec-fixed-menu"));
+        scrFunc();
     });
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
