@@ -22,12 +22,19 @@
                     </div>
                 </div>
                 <div class="mid-side side">
-                    <ul>
-                        <li>АКЦИИ</li>
-                        <li>УСЛУГИ</li>
-                        <li>О компании</li>
-                        <li>КОНТАКТЫ</li>
-                    </ul>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixed-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse my-menu" id="fixed-menu">
+                        <ul >
+                            <li>АКЦИИ</li>
+                            <li>УСЛУГИ</li>
+                            <li>О компании</li>
+                            <li>КОНТАКТЫ</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="right-side side">
                     <a class="phone" href="#">+7 (926) 621-09-97</a>
@@ -45,12 +52,20 @@
                         </div>
                     </div>
                     <div class="mid-side side">
-                        <ul>
-                            <li>АКЦИИ</li>
-                            <li>УСЛУГИ</li>
-                            <li>О компании</li>
-                            <li>КОНТАКТЫ</li>
-                        </ul>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#static-menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse my-menu" id="static-menu">
+                            <ul >
+                                <li>АКЦИИ</li>
+                                <li>УСЛУГИ</li>
+                                <li>О компании</li>
+                                <li>КОНТАКТЫ</li>
+                            </ul>
+                        </div>
+                       
                     </div>
                     <div class="right-side side">
                         <p class="work-time">Ежедневно с 9:00 до 19:00</p>
@@ -518,7 +533,7 @@
                                     <a href="#" class="mail">air_turbo@mail.ru</a>
                                 </div>
                                 <div class="side">
-                                    <span class="mail work-time">с 09:00 до 19:00</a>
+                                    <span class="mail work-time">с 09:00 до 19:00</span>
                                     <p class="desc-one-block">Ежедневно</p>
                                 </div>
                             </div>
@@ -533,16 +548,58 @@
             </div>
             
             
-            
-            
         </div>
     </section>
     <footer>
         <p>Политика конфиденциальности</p>
         <a href="#">дизайн и разработка сайта</a>
     </footer>
+    
+    <div class="modal form-modal" id="get-a-consult-mark">
+        <div class="modal-dialog">
+            <div class="modal-contant">
+                <div class="modal-body">
+                    <div class="bg-gradient">
+                        <form class="fff-bg">
+                            <div class="head">
+                                <div class="h-text">
+                                    <p class="f">Заказать звонок</p>
+                                    <p class="s">получите ответ в течении 15 минут!</p>
+                                </div>
+                                 <span class="closee" data-dismiss="modal">закрыть x</span>
+                            </div>
+                            <div class="m-mody">
+                                <div class="left-side">
+                                        
+                                        
+                                </div>
+                                <div class="right-side">
+                                
+                                
+                                
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+   <!--<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/flipclock.min.js"></script>
     <script src="js/slick.min.js"></script>

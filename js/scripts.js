@@ -1,7 +1,8 @@
+
 function init() {
     
     
-    var myMap = new ymaps.Map("map", {
+    myMap = new ymaps.Map("map", {
         center: [55.818381, 37.760035]
         , zoom: 16
         , controls: ['zoomControl']
@@ -13,11 +14,23 @@ function init() {
     var myGeoObjects = [];
     var flag_for_center = true;
     
-    
+
     
     $(".pick-adr").each(function (e) {
         var latt = $(this).attr("data-lat");
         var longg = $(this).attr("data-lon");
+        
+        
+        
+        if (flag_for_center && $(window).width() <= 991) {
+            flag_for_center = false;
+            myMap.setCenter([latt, longg], 16, {
+                checkZoomRange: false
+            });
+            
+        }
+        
+        
         
         myGeoObjects[e] = new ymaps.Placemark([latt, longg], {
             clusterCaption: 'Заголовок'
@@ -52,47 +65,33 @@ function init() {
     myMap.geoObjects.add(clusterer);
     
     
-    
-    $('.pick-adr').click(function(){
-        myMap.setCenter(
-            [parseFloat($(this).attr("data-centerlat"))
-             , parseFloat($(this).attr("data-centerlon"))], 16, {
-                checkZoomRange: false
-            });  
-    });
-    
+    if($(window).width()>991){
+        $('.pick-adr').click(function(){
+            myMap.setCenter(
+                [parseFloat($(this).attr("data-centerlat"))
+                 , parseFloat($(this).attr("data-centerlon"))], 16, {
+                    checkZoomRange: false
+                });  
+        });
+    }
+    else{
+        
+         
+         $('.pick-adr').click(function(){
+            myMap.setCenter(
+                [parseFloat($(this).attr("data-lat"))
+                 , parseFloat($(this).attr("data-lon"))], 16, {
+                    checkZoomRange: false
+                });  
+        });
+    }
 }
 
-ymaps.ready(init);
+
 $(document).ready(function () {
-    /* $('.slider-last-ex').slick({
-         dots: false
-         , arrows: false
-         , infinite: true
-         , speed: 300
-         , slidesToShow: 3
-         , autoplay: true
-         , autoplaySpeed: 5000
-         , slidesToScroll: 1
-         , responsive: [
-             {
-                 breakpoint: 992
-                 , settings: {
-                     slidesToShow: 2
-                     , slidesToScroll: 1
-                     
-                 }
-             },
-             {
-                 breakpoint: 768
-                 , settings: {
-                     slidesToShow: 1
-                     , slidesToScroll: 1
-                     
-                 }
-             }
-           ]
-     });*/
+    var myMap;
+    //ymaps.ready(init);
+    
 
 
     $('.slider-main').slick({
@@ -129,7 +128,16 @@ $(document).ready(function () {
                      , slidesToScroll: 1
                      
                  }
+             },
+             {
+                 breakpoint: 1200
+                 , settings: {
+                     slidesToShow: 2
+                     , slidesToScroll: 1
+                     
+                 }
              }
+            
         ]
     });
 
